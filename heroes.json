@@ -1,0 +1,81 @@
+{
+  "heroes": [
+    {
+      "id": "5234",
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
+      "element": "fire"
+    },
+    {
+      "id": "1248",
+      "name": "Неизвестный герой",
+      "description": "Скрывающийся в тени",
+      "element": "wind"
+    },
+    {
+      "id": "74321",
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
+    },
+    {
+      "id": "62061b9b-ac78-48f1-a9c5-3a23d575b42c",
+      "name": "йп",
+      "description": "пй",
+      "element": "fire"
+    },
+    {
+      "id": "0b10112a-acad-4bfe-a808-9637f86c684e",
+      "name": "Константин",
+      "description": "илом",
+      "element": "fire"
+    },
+    {
+      "id": "a0ef2408-074e-4eb4-b59e-533ec83a603a",
+      "name": "Константин",
+      "description": "илом",
+      "element": "water"
+    },
+    {
+      "id": "f2d49da9-b4f8-4169-a91e-36caf1f4ac9c",
+      "name": "Константин",
+      "description": "илом",
+      "element": "wind"
+    },
+    {
+      "id": "bcf4ce1b-5c77-4c23-bb58-534f77def8b4",
+      "name": "Константин",
+      "description": "илом",
+      "element": "earth"
+    },
+    {
+      "id": "8f32e6fd-69e1-40ed-b01a-d5734020da87",
+      "name": "ddd",
+      "description": "ddd",
+      "element": "water"
+    }
+  ],
+  "filters": [
+    {
+      "value": "Все",
+      "btnClass": "btn btn-outline-dark"
+    },
+    {
+      "value": "Огонь",
+      "btnClass": "btn btn-danger"
+      
+    },
+    {
+      "value": "Вода",
+      "btnClass": "btn btn-primary"
+    },
+    {
+      "value": "Ветер",
+      "btnClass": "btn btn-success"
+    },
+    {
+      "value": "Земля",
+      "btnClass": "btn btn-secondary"
+    }
+  ]
+}
