@@ -23,3 +23,10 @@ export const heroesFilters = (filters) => {
         payload: filters
     }
 }
+
+export const filter = (filter) => {
+    return {
+        type: 'SELECT_FILTER',
+        payload: filter
+    }
+}

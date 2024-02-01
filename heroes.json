@@ -53,29 +53,39 @@
       "name": "ddd",
       "description": "ddd",
       "element": "water"
+    },
+    {
+      "id": "4909c4e8-e8af-4863-8069-307ef021cf1f",
+      "name": "A.I.M.",
+      "description": "сосать",
+      "element": "fire"
     }
   ],
   "filters": [
     {
       "value": "Все",
-      "btnClass": "btn btn-outline-dark"
+      "btnClass": "btn btn-outline-dark",
+      "select": "all"
     },
     {
       "value": "Огонь",
-      "btnClass": "btn btn-danger"
-      
+      "btnClass": "btn btn-danger",
+      "select": "fire"
     },
     {
       "value": "Вода",
-      "btnClass": "btn btn-primary"
+      "btnClass": "btn btn-primary",
+      "select": "water"
     },
     {
       "value": "Ветер",
-      "btnClass": "btn btn-success"
+      "btnClass": "btn btn-success",
+      "select": "wind"
     },
     {
       "value": "Земля",
-      "btnClass": "btn btn-secondary"
+      "btnClass": "btn btn-secondary",
+      "select": "earth"
     }
   ]
 }

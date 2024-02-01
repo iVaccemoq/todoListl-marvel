@@ -7,7 +7,7 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 
 const HeroesList = () => {
-    const {heroes, heroesLoadingStatus} = useSelector(state => state);
+    const {heroes, heroesLoadingStatus, selectFilter} = useSelector(state => state);
     const dispatch = useDispatch();
     const {request} = useHttp();
 
@@ -19,6 +19,22 @@ const HeroesList = () => {
 
         // eslint-disable-next-line
     }, []);
+
+
+    const filterChars = (char = heroes, element = 'all' ) => {
+
+        if (char.length === 0) {
+            return <h5 className="text-center mt-5">Героев пока нет</h5>
+        }
+
+        if (element === 'all') {
+            return char
+        }
+
+        return char.filter(hero => {
+            return hero.props.element === element;
+        })
+    }
 
     const deleteCharacter = (id) => {
         heroes.forEach((char, i) => {
@@ -48,12 +64,12 @@ const HeroesList = () => {
             return <HeroesListItem key={id} id={id} {...props} deleteCharacter={deleteCharacter}/>
         })
     }
-    console.log(heroes)
 
     const elements = renderHeroesList(heroes);
+
     return (
         <ul>
-            {elements}
+            {filterChars(elements, selectFilter)}
         </ul>
     )
 }

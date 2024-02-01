@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import { useHttp } from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { heroesFilters } from '../../actions';
+import { heroesFilters, filter } from '../../actions';
 
 const HeroesFilters = () => {
 
@@ -25,11 +25,15 @@ const HeroesFilters = () => {
             .then(data => {
                 dispatch(heroesFilters(
                     data.map(item => {
-                        return <button className={item.btnClass}>{item.value}</button>
+                        return <button onClick={() => selectElement(item.select)} className={item.btnClass}>{item.value}</button>
                     })
                 )) 
             })
     }, [])
+
+    const selectElement = (element) => {
+        dispatch(filter(element))
+    }
 
     return (
         <div className="card shadow-lg mt-4">
