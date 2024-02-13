@@ -1,9 +1,8 @@
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useHttp } from '../../hooks/http.hook';
-import { useEffect } from 'react';
 
-import { heroesFetching, heroesFetched, heroesFetchingError, heroesFilters } from '../../actions';
+import { heroesFetching, heroesFetched, heroesFetchingError } from '../../actions';
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -14,17 +13,6 @@ const HeroesAddForm = () => {
     const {heroes} = useSelector(state => state.heroes);
     const dispatch = useDispatch();
     const {request} = useHttp();
-
-    useEffect(() => {
-        request('http://localhost:3001/filters')
-            .then(data => {
-                dispatch(heroesFilters(
-                    data.map(item => {
-                        return <option value={item.value}>{item.value}</option>
-                    })
-                )) 
-            })
-    }, [])
 
     return (   
         <Formik
