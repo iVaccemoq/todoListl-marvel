@@ -19,73 +19,48 @@
       "element": "water"
     },
     {
-      "id": "62061b9b-ac78-48f1-a9c5-3a23d575b42c",
-      "name": "йп",
-      "description": "пй",
-      "element": "fire"
-    },
-    {
-      "id": "0b10112a-acad-4bfe-a808-9637f86c684e",
-      "name": "Константин",
-      "description": "илом",
-      "element": "fire"
-    },
-    {
-      "id": "a0ef2408-074e-4eb4-b59e-533ec83a603a",
-      "name": "Константин",
-      "description": "илом",
-      "element": "water"
-    },
-    {
-      "id": "f2d49da9-b4f8-4169-a91e-36caf1f4ac9c",
-      "name": "Константин",
-      "description": "илом",
+      "id": "75960f75-b41e-4d41-b4bd-9cf710571bc3",
+      "name": "fwe",
+      "description": "fwe",
       "element": "wind"
     },
     {
-      "id": "bcf4ce1b-5c77-4c23-bb58-534f77def8b4",
-      "name": "Константин",
-      "description": "илом",
+      "id": "728ec349-ed74-4414-a3b4-223e9431700a",
+      "name": "fewfwe",
+      "description": "fewfew",
       "element": "earth"
-    },
-    {
-      "id": "8f32e6fd-69e1-40ed-b01a-d5734020da87",
-      "name": "ddd",
-      "description": "ddd",
-      "element": "water"
-    },
-    {
-      "id": "4909c4e8-e8af-4863-8069-307ef021cf1f",
-      "name": "A.I.M.",
-      "description": "сосать",
-      "element": "fire"
     }
   ],
   "filters": [
     {
       "value": "Все",
       "btnClass": "btn btn-outline-dark",
-      "select": "all"
+      "select": "all",
+      "id": "2989"
     },
     {
       "value": "Огонь",
       "btnClass": "btn btn-danger",
-      "select": "fire"
+      "select": "fire",
+      "id": "6934"
     },
     {
       "value": "Вода",
       "btnClass": "btn btn-primary",
-      "select": "water"
+      "select": "water",
+      "id": "aefc"
     },
     {
       "value": "Ветер",
       "btnClass": "btn btn-success",
-      "select": "wind"
+      "select": "wind",
+      "id": "5d88"
     },
     {
       "value": "Земля",
       "btnClass": "btn btn-secondary",
-      "select": "earth"
+      "select": "earth",
+      "id": "1b32"
     }
   ]
 }

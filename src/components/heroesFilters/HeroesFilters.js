@@ -10,12 +10,20 @@ import { useEffect } from 'react'
 
 import { useHttp } from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
+import { createSelector } from 'reselect'
 
 import { heroesFilters, filter } from '../../actions';
 
 const HeroesFilters = () => {
 
-    const {filters} = useSelector(state => state)
+    const filterr = createSelector(
+        (state) => state.filters.filters,
+        (filters) => {
+            return filters
+        }
+    )
+    
+    const filters = useSelector(filterr)
     
     const {request} = useHttp();
     const dispatch = useDispatch()
